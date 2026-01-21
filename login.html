@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign in · Status</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="auth-page">
+  <main class="container">
+    <div class="auth-card">
+      <h1>Sign in</h1>
+      <p class="auth-subtitle">
+        See where you stand
+      </p>
+
+      <form onsubmit="localStorage.setItem('loggedIn','true'); window.location.href='dashboard.html'; return false;">
+        <label>
+          Email
+          <input type="email" placeholder="you@example.com" required />
+        </label>
+
+        <label>
+          Password
+          <input type="password" placeholder="••••••••" required />
+        </label>
+
+        <button class="primary" type="submit">
+          Sign in
+        </button>
+      </form>
+
+      <p class="auth-footer">
+        No account yet? <a href="signup.html">Get started</a>
+      </p>
+    </div>
+  </main>
+
+</body>
+
+</html>
