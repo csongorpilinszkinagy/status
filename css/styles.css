@@ -10,13 +10,13 @@
 
 * {
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 body {
-  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
   background: var(--grey-light);
   color: black;
+  margin: 0;
 }
 
 .container {
@@ -25,7 +25,7 @@ body {
   padding: 4rem 1.5rem;
 }
 
-.hero {
+.landing-intro {
   text-align: center;
   margin-bottom: 5rem;
 }
@@ -37,19 +37,17 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.hero-subtitle {
-  max-width: 650px;
+.landing-intro p {
   margin: 0 auto 2.5rem;
   font-size: 1.2rem;
   color: var(--grey-dark);
 }
 
-/* Primary button */
-button.primary,
-a.primary-button {
-  background: var(--primary);
-  /* coral */
-  color: white;
+.highlight {
+  color: var(--primary);
+}
+
+.button {
   border: none;
   border-radius: 10px;
   padding: 0.9rem 2rem;
@@ -60,16 +58,18 @@ a.primary-button {
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
-button.primary:hover,
-a.primary-button:hover {
+.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.primary.button:hover {
   background: var(--primary-dark);
-  /* darker coral */
   transform: scale(1.03);
 }
 
 /* Secondary button */
-button.secondary,
-a.secondary-button {
+.secondary {
   background: white;
   color: var(--primary);
   border: 2px solid var(--primary);
@@ -79,19 +79,11 @@ a.secondary-button {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-button.secondary:hover,
-a.secondary-button:hover {
-  background: var(--primary-dark);
-  /* swap to primary coral */
-  color: white;
+.secondary.button:hover {
+  background: var(--grey-light);
   transform: scale(1.03);
-}
-
-.primary-button:hover {
-  background: var(--primary-dark);
 }
 
 .cards {
@@ -104,7 +96,7 @@ a.secondary-button:hover {
   background: white;
   padding: 1.75rem;
   border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -112,6 +104,7 @@ a.secondary-button:hover {
 }
 
 .card p {
+  text-align: justify;
   color: var(--grey-dark);
   line-height: 1.5;
 }
@@ -123,9 +116,7 @@ footer {
   font-size: 0.9rem;
 }
 
-.highlight {
-  color: var(--primary);
-}
+
 
 body.auth-page {
   min-height: 100vh;
