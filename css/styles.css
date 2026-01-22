@@ -1,3 +1,13 @@
+:root {
+  --grey-light: #f9fafb;
+  --grey-dark: #475569;
+
+
+  --primary: #ff7f50;
+  --primary-light: #ffC0ad;
+  --primary-dark: #e65a48;
+}
+
 * {
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -5,8 +15,8 @@
 
 body {
   margin: 0;
-  background: #f9fafb;
-  color: #0f172a;
+  background: var(--grey-light);
+  color: black;
 }
 
 .container {
@@ -31,13 +41,13 @@ body {
   max-width: 650px;
   margin: 0 auto 2.5rem;
   font-size: 1.2rem;
-  color: #475569;
+  color: var(--grey-dark);
 }
 
 /* Primary button */
 button.primary,
 a.primary-button {
-  background: #fb6f53;
+  background: var(--primary);
   /* coral */
   color: white;
   border: none;
@@ -52,7 +62,7 @@ a.primary-button {
 
 button.primary:hover,
 a.primary-button:hover {
-  background: #e65a48;
+  background: var(--primary-dark);
   /* darker coral */
   transform: scale(1.03);
 }
@@ -61,8 +71,8 @@ a.primary-button:hover {
 button.secondary,
 a.secondary-button {
   background: white;
-  color: #fb6f53;
-  border: 2px solid #fb6f53;
+  color: var(--primary);
+  border: 2px solid var(--primary);
   border-radius: 10px;
   padding: 0.9rem 2rem;
   font-weight: 600;
@@ -74,14 +84,14 @@ a.secondary-button {
 
 button.secondary:hover,
 a.secondary-button:hover {
-  background: #fb6f53;
+  background: var(--primary-dark);
   /* swap to primary coral */
   color: white;
   transform: scale(1.03);
 }
 
 .primary-button:hover {
-  background: #e65a48;
+  background: var(--primary-dark);
 }
 
 .cards {
@@ -102,19 +112,19 @@ a.secondary-button:hover {
 }
 
 .card p {
-  color: #475569;
+  color: var(--grey-dark);
   line-height: 1.5;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  color: #64748b;
+  color: var(--grey-dark);
   font-size: 0.9rem;
 }
 
 .highlight {
-  color: #fb6f53;
+  color: var(--primary);
 }
 
 body.auth-page {
@@ -122,12 +132,12 @@ body.auth-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f9fafb;
+  background: var(--grey-light);
   font-family: Helvetica, Arial, sans-serif;
 }
 
 .auth-card {
-  background: #ffffff;
+  background: white;
   padding: 3rem;
   border-radius: 16px;
   width: 100%;
@@ -141,7 +151,7 @@ body.auth-page {
 }
 
 .auth-subtitle {
-  color: #6b7280;
+  color: var(--grey-dark);
   margin-bottom: 2rem;
   font-size: 0.95rem;
 }
@@ -158,19 +168,19 @@ input {
   margin-top: 0.4rem;
   padding: 0.75rem;
   border-radius: 10px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--grey-dark);
   font-size: 0.95rem;
 }
 
 input:focus {
   outline: none;
-  border-color: #fb6f53;
+  border-color: var(--primary);
 }
 
 button.primary {
   width: 100%;
   padding: 0.9rem 2rem;
-  background: #fb6f53;
+  background: var(--primary);
   color: white;
   font-weight: 600;
   border: none;
@@ -180,7 +190,7 @@ button.primary {
 }
 
 button.primary:hover {
-  background: #e65a48;
+  background: var(--primary-dark);
   transform: scale(1.03);
 }
 
@@ -191,7 +201,7 @@ button.primary:hover {
 }
 
 .auth-footer a {
-  color: #fb6f53;
+  color: var(--primary);
   text-decoration: none;
   font-weight: 600;
 }
