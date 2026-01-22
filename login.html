@@ -15,7 +15,7 @@
         See where you stand
       </p>
 
-      <form onsubmit="localStorage.setItem('loggedIn','true'); window.location.href='dashboard.html'; return false;">
+      <form onsubmit="window.location.href='dashboard.html'; return false;">
         <label>
           Email
           <input type="email" placeholder="you@example.com" required />
@@ -26,7 +26,7 @@
           <input type="password" placeholder="••••••••" required />
         </label>
 
-        <button class="primary" type="submit">
+        <button class="primary button" type="submit">
           Sign in
         </button>
       </form>
@@ -35,6 +35,10 @@
         No account yet? <a href="signup.html">Get started</a>
       </p>
     </div>
+
+    <footer>
+      <p>Csongor Pilinszki-Nagy • 2026</p>
+    </footer>
   </main>
 
 </body>

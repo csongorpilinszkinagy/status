@@ -48,6 +48,7 @@ body {
 }
 
 .button {
+  all: unset;
   border: none;
   border-radius: 10px;
   padding: 0.9rem 2rem;
@@ -55,7 +56,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  transition: background 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease;
 }
 
 .primary {
@@ -65,10 +66,8 @@ body {
 
 .primary.button:hover {
   background: var(--primary-dark);
-  transform: scale(1.03);
 }
 
-/* Secondary button */
 .secondary {
   background: white;
   color: var(--primary);
@@ -83,7 +82,6 @@ body {
 
 .secondary.button:hover {
   background: var(--grey-light);
-  transform: scale(1.03);
 }
 
 .cards {
@@ -116,15 +114,11 @@ footer {
   font-size: 0.9rem;
 }
 
-
-
-body.auth-page {
+.auth-page {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--grey-light);
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 .auth-card {
@@ -168,23 +162,6 @@ input:focus {
   border-color: var(--primary);
 }
 
-button.primary {
-  width: 100%;
-  padding: 0.9rem 2rem;
-  background: var(--primary);
-  color: white;
-  font-weight: 600;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
-}
-
-button.primary:hover {
-  background: var(--primary-dark);
-  transform: scale(1.03);
-}
-
 .auth-footer {
   margin-top: 1.5rem;
   font-size: 0.9rem;
@@ -195,8 +172,9 @@ button.primary:hover {
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 .auth-footer a:hover {
-  text-decoration: underline;
+  color: var(--primary-dark)
 }

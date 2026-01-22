@@ -15,7 +15,7 @@
         Build your performance profile
       </p>
 
-      <form onsubmit="localStorage.setItem('loggedIn','true'); window.location.href='dashboard.html'; return false;">
+      <form onsubmit="window.location.href='dashboard.html'; return false;">
         <label>
           Email
           <input type="email" placeholder="you@example.com" required />
@@ -31,7 +31,7 @@
           <input type="password" placeholder="••••••••" required />
         </label>
 
-        <button class="primary" type="submit">
+        <button class="primary button" type="submit">
           Get started
         </button>
       </form>
@@ -40,6 +40,10 @@
         Already have an account? <a href="login.html">Sign in</a>
       </p>
     </div>
+
+    <footer>
+      <p>Csongor Pilinszki-Nagy • 2026</p>
+    </footer>
   </main>
 </body>
 
