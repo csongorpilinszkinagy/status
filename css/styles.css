@@ -178,3 +178,50 @@ input:focus {
 .auth-footer a:hover {
   color: var(--primary-dark)
 }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-evenly; /* cards spread out when more space */
+  flex-wrap: wrap;                /* allow new row if screen is narrow */
+  gap: 2rem;                      /* space between cards */
+}
+
+.dashboard-card {
+  width: 250px;    /* fixed width */
+  height: 200px;   /* fixed height */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: 600;
+
+  display: flex;               /* flex-konténer */
+  flex-direction: column;      /* függőleges elrendezés */
+  justify-content: center;     /* függőleges középre */
+  align-items: center; 
+}
+
+.dashboard-card h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.dashboard-card p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FF7F50;
+  margin: 0.5rem 0;
+}
