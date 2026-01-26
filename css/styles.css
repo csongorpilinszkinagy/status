@@ -193,14 +193,14 @@ header h1 {
 
 .dashboard-cards {
   display: flex;
-  justify-content: space-evenly; /* cards spread out when more space */
-  flex-wrap: wrap;                /* allow new row if screen is narrow */
-  gap: 2rem;                      /* space between cards */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .dashboard-card {
-  width: 250px;    /* fixed width */
-  height: 200px;   /* fixed height */
+  width: 250px;
+  height: 200px;
   background: white;
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
@@ -208,9 +208,9 @@ header h1 {
   padding: 1.5rem;
   font-weight: 600;
 
-  display: flex;               /* flex-konténer */
-  flex-direction: column;      /* függőleges elrendezés */
-  justify-content: center;     /* függőleges középre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center; 
 }
 
@@ -222,6 +222,11 @@ header h1 {
 .dashboard-card p {
   font-size: 2rem;
   font-weight: 700;
-  color: #FF7F50;
+  color: var(--primary);
   margin: 0.5rem 0;
+}
+
+p.metric-value {
+  font-size: 1.25rem;
+  color: black;
 }
